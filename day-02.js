@@ -1,4 +1,4 @@
-Basic data types--Number http://www.codewars.com/kata/571edd157e8954bab500032d
+// Basic data types--Number http://www.codewars.com/kata/571edd157e8954bab500032d
 
 var v1=50;v2=100,v3=150,v4=200,v5=2,v6=250
 function equal1(){
@@ -32,7 +32,7 @@ function equal5(){
   return a%b;
 }
 
-Basic data types--String http://www.codewars.com/kata/571edea4b625edcb51000d8e
+// Basic data types--String http://www.codewars.com/kata/571edea4b625edcb51000d8e
 
 var a1="A",a2="a",b1="B",b2="b",c1="C",c2="c",d1="D",d2="d",e1="E",e2="e",n1="N",n2="n"
 function Dad(){
@@ -66,7 +66,7 @@ function answer3(){
   return "yes";
 }
 
-Basic data types--Array http://www.codewars.com/kata/571effabb625ed9b0600107a
+// Basic data types--Array http://www.codewars.com/kata/571effabb625ed9b0600107a
 
 const getLength = arr => arr.length;
 
@@ -87,6 +87,6 @@ const popElement = arr => {
   return arr
 }
 
-Basic data types--Object - http://www.codewars.com/kata/571f1eb77e8954a812000837
+// Basic data types--Object - http://www.codewars.com/kata/571f1eb77e8954a812000837
 
 const animal = obj => `This ${obj.color} ${obj.name} has ${obj.legs} legs.`
