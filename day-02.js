@@ -2,33 +2,33 @@
 
 var v1=50;v2=100,v3=150,v4=200,v5=2,v6=250
 function equal1(){
-  var a=v1   
-  var b=v1   
+  var a=v1;
+  var b=v1;
   return a+b;
 }
 
 //Please refer to the example above to complete the following functions
 function equal2(){
-  var a=v3   //set number value to a
-  var b=v1   //set number value to b
+  var a=v3;   //set number value to a
+  var b=v1;   //set number value to b
   return a-b;
 }
 
 function equal3(){
   var a=v1   //set number value to a
-  var b=v5   //set number value to b
+  var b=v5;   //set number value to b
   return a*b;
 }
 
 function equal4(){
-  var a=v4   //set number value to a
-  var b=v5   //set number value to b
+  var a=v4;   //set number value to a
+  var b=v5;   //set number value to b
   return a/b;
 }
 
 function equal5(){
-  var a=v6   //set number value to a
-  var b=v3   //set number value to b
+  var a=v6;   //set number value to a
+  var b=v3;   //set number value to b
   return a%b;
 }
 
@@ -77,16 +77,16 @@ const getLast = arr => arr[arr.length - 1];
 const pushElement = arr => {
   var el=1;
   //push el to arr
-  arr.push(el)
+  arr.push(el);
   return arr
-}
+};
 
 const popElement = arr => {
   //pop an element from arr
-  arr.pop()
+  arr.pop();
   return arr
-}
+};
 
 // Basic data types--Object - http://www.codewars.com/kata/571f1eb77e8954a812000837
 
-const animal = obj => `This ${obj.color} ${obj.name} has ${obj.legs} legs.`
+const animal = obj => `This ${obj.color} ${obj.name} has ${obj.legs} legs.`;
