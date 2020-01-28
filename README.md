@@ -3,7 +3,7 @@
 1.day-01.js
 https://www.codewars.com/kata/571ec274b1c8d4a61c0000c8
 
-1.day-02.js
+2.day-02.js
 "Basic data types:
 Basic data types--Number http://www.codewars.com/kata/571edd157e8954bab500032d
 Basic data types--String http://www.codewars.com/kata/571edea4b625edcb51000d8e
