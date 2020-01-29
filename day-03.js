@@ -19,7 +19,7 @@ function saleHotdogs(n){
 
 const saleHotdogs = n => n * (n < 5 ? 100 : n < 10 ? 95 : 90);
 
-// #8: Conditional statement--switch http://www.codewars.com/kata/572059afc2f4612825000d8a
+// #8: Conditional statement--switch http://www.codewars.com/kata/572059afc2f4612825000d8a 
 
 function howManydays(month){
   var days;
