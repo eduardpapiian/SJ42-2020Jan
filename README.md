@@ -22,3 +22,10 @@ Basic data types--Boolean and conditional statements if..else http://www.codewar
 if..else and ternary operator http://www.codewars.com/kata/57202aefe8d6c514300001fd
 
 Conditional statement--switch http://www.codewars.com/kata/572059afc2f4612825000d8a
+
+4.day-04.js
+Loops:
+#9: loop statement --while and do..while http://www.codewars.com/kata/57216d4bcdd71175d6000560
+#10: loop statement --for http://www.codewars.com/kata/5721a78c283129e416000999
+#11: loop statement --break,continue http://www.codewars.com/kata/5721c189cdd71194c1000b9b
+#12: loop statement --for..in and for..of http://www.codewars.com/kata/5722b3f0bd5583cf44001000
