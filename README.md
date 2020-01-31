@@ -33,3 +33,12 @@ Loops:
 #11: loop statement --break,continue http://www.codewars.com/kata/5721c189cdd71194c1000b9b
 
 #12: loop statement --for..in and for..of http://www.codewars.com/kata/5722b3f0bd5583cf44001000
+
+5.day-05.js
+
+Syntax task https://www.codewars.com/kata/is-this-my-tail/train/javascript
+
+Do I get a bonus https://www.codewars.com/kata/56f6ad906b88de513f000d96
+
+Automorphic number https://www.codewars.com/kata/5a58d889880385c2f40000aa
+
