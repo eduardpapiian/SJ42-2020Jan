@@ -42,3 +42,11 @@ Do I get a bonus https://www.codewars.com/kata/56f6ad906b88de513f000d96
 
 Automorphic number https://www.codewars.com/kata/5a58d889880385c2f40000aa
 
+6.day-06.js
+Calc:
+
+Maximum Multiple https://www.codewars.com/kata/maximum-multiple/train/javascript
+
+Is he gonna survive? https://www.codewars.com/kata/is-he-gonna-survive/train/javascript
+
+5 without numbers: https://www.codewars.com/kata/59441520102eaa25260000bf
