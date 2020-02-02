@@ -50,3 +50,7 @@ Maximum Multiple https://www.codewars.com/kata/maximum-multiple/train/javascript
 Is he gonna survive? https://www.codewars.com/kata/is-he-gonna-survive/train/javascript
 
 5 without numbers: https://www.codewars.com/kata/59441520102eaa25260000bf
+
+7.day-07.js
+
+Error Throwing - Error Handling #2 https://www.codewars.com/kata/55e7650c8d894146be000095/
