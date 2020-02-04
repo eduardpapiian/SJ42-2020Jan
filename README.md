@@ -64,3 +64,12 @@ Number object and its properties http://www.codewars.com/kata/5722fd3ab7162a3a45
 Methods of Number object--toString() and toLocaleString(): https://www.codewars.com/kata/57238ceaef9008adc7000603
 
 Methods of Number object--toFixed(), toExponential() and toPrecision() http://www.codewars.com/kata/57256064856584bc47000611
+
+**9.day-09.js**
+
+#16: Methods of String object--slice(), substring() and substr() http://www.codewars.com/kata/57274562c8dcebe77e001012
+
+#17: Methods of String object--indexOf(), lastIndexOf() and search() http://www.codewars.com/kata/57277a31e5e51450a4000010
+
+#18: Methods of String object--concat() split() and its good friend join()"
+http://www.codewars.com/kata/57280481e8118511f7000ffa"
