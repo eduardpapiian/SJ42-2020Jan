@@ -73,3 +73,11 @@ Methods of Number object--toFixed(), toExponential() and toPrecision() http://ww
 
 #18: Methods of String object--concat() split() and its good friend join()"
 http://www.codewars.com/kata/57280481e8118511f7000ffa"
+
+**10.day-10.js**
+
+#19: Methods of String object--toUpperCase() toLowerCase() and replace() http://www.codewars.com/kata/5728203b7fc662a4c4000ef3
+
+#20: Methods of String object--charAt() charCodeAt() and fromCharCode() http://www.codewars.com/kata/57284d23e81185ae6200162a
+
+#21: Methods of String object--trim() and the string template http://www.codewars.com/kata/5729b103dd8bac11a900119e
