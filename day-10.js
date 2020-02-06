@@ -10,39 +10,27 @@ function alienLanguage(str) {
 
 // #20: Methods of String object--charAt() charCodeAt() and fromCharCode() http://www.codewars.com/kata/57284d23e81185ae6200162a
 
-//TODO
-// function topSecret(str) {
-//   const chars = str.split("");
-//   for (let i = 0; i < chars.length; i++) {
-//     switch (chars[i]) {
-//       case "A":
-//         chars[i] = "X";
-//         break;
-//       case "B":
-//         chars[i] = "Y";
-//         break;
-//       case "C":
-//         chars[i] = "Z";
-//         break;
-//       case "a":
-//         chars[i] = "x";
-//         break;
-//       case "b":
-//         chars[i] = "y";
-//         break;
-//       case "c":
-//         chars[i] = "z";
-//         break;
-//       case " ":
-//         continue;
-//       case "!":
-//         continue;
-//       default:
-//         chars[i] = String.fromCharCode(chars[i].charCodeAt() - 3);
-//     }
-//   }
-//   return chars.join("");
-// }
+function topSecret(str) {
+  const strArr = str.split("");
+  for (i = 0; i < strArr.length; i++) {
+    let char = strArr[i].charCodeAt();
+    if ((char <= 99 && char >= 97) || (char <= 67 && char >= 65)) {
+      strArr[i] = String.fromCharCode(char + 23);
+    } else if (char <= 64) {
+      continue;
+    } else {
+      strArr[i] = String.fromCharCode(char - 3);
+    }
+  }
+  return strArr.join("");
+}
+
+//question1: The top secret file number is...
+answer1="2466";
+//question2: Super agent's name is...
+answer2="DJomI";
+//question3: He stole the treasure is...
+answer3="Train tire";
 
 // #21: Methods of String object--trim() and the string template http://www.codewars.com/kata/5729b103dd8bac11a900119e
 
