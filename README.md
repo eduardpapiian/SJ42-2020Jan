@@ -81,3 +81,7 @@ http://www.codewars.com/kata/57280481e8118511f7000ffa"
 #20: Methods of String object--charAt() charCodeAt() and fromCharCode() http://www.codewars.com/kata/57284d23e81185ae6200162a
 
 #21: Methods of String object--trim() and the string template http://www.codewars.com/kata/5729b103dd8bac11a900119e
+
+**11.day-11.js**
+
+Playing with Sets : Equal or Not ? https://www.codewars.com/kata/playing-with-sets-equal-or-not/train/javascript
