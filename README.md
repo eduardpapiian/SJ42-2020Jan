@@ -85,3 +85,15 @@ http://www.codewars.com/kata/57280481e8118511f7000ffa"
 **11.day-11.js**
 
 Playing with Sets : Equal or Not ? https://www.codewars.com/kata/playing-with-sets-equal-or-not/train/javascript
+
+**12.day-12.js**
+
+Set Basics http://tddbin.com/#?kata=es6/language/set/basics
+
+set.add() http://tddbin.com/#?kata=es6/language/set/add
+
+set.delete() http://tddbin.com/#?kata=es6/language/set/delete
+
+Set API http://tddbin.com/#?kata=es6/language/set/api
+
+set.clear() http://tddbin.com/#?kata=es6/language/set/clear
