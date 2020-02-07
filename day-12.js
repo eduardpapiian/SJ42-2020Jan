@@ -4,7 +4,7 @@
 
 describe('`Set` lets you store unique values of any type', function(){
   it('`Set` is a new global constructor function', function() {
-    const typeOfSet = 'function';
+    const typeOfSet = typeof Set;
     assert.equal(typeof Set, typeOfSet);
   });
   it('every value in a set is unique', function() {
