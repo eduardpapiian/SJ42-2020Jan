@@ -97,3 +97,15 @@ set.delete() http://tddbin.com/#?kata=es6/language/set/delete
 Set API http://tddbin.com/#?kata=es6/language/set/api
 
 set.clear() http://tddbin.com/#?kata=es6/language/set/clear
+
+**13.day-13.js**
+
+basics http://tddbin.com/#?kata=es6/language/map/basics
+
+map.get() http://tddbin.com/#?kata=es6/language/map/get
+
+map.set() http://tddbin.com/#?kata=es6/language/map/set
+
+initialize http://tddbin.com/#?kata=es6/language/map/initialize
+
+map.has() http://tddbin.com/#?kata=es6/language/map/has
