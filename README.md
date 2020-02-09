@@ -86,7 +86,7 @@ http://www.codewars.com/kata/57280481e8118511f7000ffa"
 
 Playing with Sets : Equal or Not ? https://www.codewars.com/kata/playing-with-sets-equal-or-not/train/javascript
 
-**12.day-12.js**
+**12.day-12.js** Set
 
 Set Basics http://tddbin.com/#?kata=es6/language/set/basics
 
@@ -98,7 +98,7 @@ Set API http://tddbin.com/#?kata=es6/language/set/api
 
 set.clear() http://tddbin.com/#?kata=es6/language/set/clear
 
-**13.day-13.js**
+**13.day-13.js** Map
 
 basics http://tddbin.com/#?kata=es6/language/map/basics
 
@@ -109,3 +109,11 @@ map.set() http://tddbin.com/#?kata=es6/language/map/set
 initialize http://tddbin.com/#?kata=es6/language/map/initialize
 
 map.has() http://tddbin.com/#?kata=es6/language/map/has
+
+**14.day-14.js** Symbol
+
+basics http://tddbin.com/#?kata=es6/language/symbol/basics
+
+Symbol.for() http://tddbin.com/#?kata=es6/language/symbol/for
+
+Symbol.keyFor() http://tddbin.com/#?kata=es6/language/symbol/keyFor
