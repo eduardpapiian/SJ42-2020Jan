@@ -32,10 +32,11 @@ function infiniteLoop(arr, d, n) {
 // #24: methods of arrayObject---splice() and slice() http://www.codewars.com/kata/572cb264362806af46000793
 
 function threeInOne(arr){
+  let newArr = arr.slice();
   let index = 0;
   let myArr = [];
-  for(let i = 0; i < arr.length; i +=3) {
-    let sum = arr.slice(index, index+3).reduce((a, b) => a + b);
+  for(let i = 0; i < newArr.length; i +=3) {
+    let sum = newArr.slice(index, index+3).reduce((a, b) => a + b);
     myArr.push(sum);
     index += 3;
   }

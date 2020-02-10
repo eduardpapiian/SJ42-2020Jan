@@ -117,3 +117,11 @@ basics http://tddbin.com/#?kata=es6/language/symbol/basics
 Symbol.for() http://tddbin.com/#?kata=es6/language/symbol/for
 
 Symbol.keyFor() http://tddbin.com/#?kata=es6/language/symbol/keyFor
+
+**15.day-15.js** Array
+
+#22: Unlock new skills--Arrow function,spread operator and deconstruction http://www.codewars.com/kata/572ab0cfa3af384df7000ff8
+
+#23: methods of arrayObject---push(), pop(), shift() and unshift() http://www.codewars.com/kata/572af273a3af3836660014a1
+
+#24: methods of arrayObject---splice() and slice() http://www.codewars.com/kata/572cb264362806af46000793
