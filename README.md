@@ -126,10 +126,18 @@ Symbol.keyFor() http://tddbin.com/#?kata=es6/language/symbol/keyFor
 
 #24: methods of arrayObject---splice() and slice() http://www.codewars.com/kata/572cb264362806af46000793
 
+**16.day-16.js** Array
 
+#25: methods of arrayObject---reverse() and sort() http://www.codewars.com/kata/572df796914b5ba27c000c90
 
+#26: methods of arrayObject---map() http://www.codewars.com/kata/572fdeb4380bb703fc00002c
+
+#27: methods of arrayObject---filter() http://www.codewars.com/kata/573023c81add650b84000429
+
+#28: methods of arrayObject---every() and some() http://www.codewars.com/kata/57308546bd9f0987c2000d07
 
 
 !! #22: Unlock new skills--Arrow function,spread operator and deconstruction http://www.codewars.com/kata/572ab0cfa3af384df7000ff8
 !! #24: methods of arrayObject---splice() and slice() http://www.codewars.com/kata/572cb264362806af46000793
 !! #25: methods of arrayObject---reverse() and sort() http://www.codewars.com/kata/572df796914b5ba27c000c90
+!! #28: methods of arrayObject---every() and some() http://www.codewars.com/kata/57308546bd9f0987c2000d07

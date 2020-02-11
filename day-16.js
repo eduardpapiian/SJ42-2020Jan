@@ -22,3 +22,34 @@ function isolateIt(arr) {
   });
 }
 
+// #27: methods of arrayObject---filter() http://www.codewars.com/kata/573023c81add650b84000429
+function countGrade(scores) {
+  return {
+    S: scores.filter(val => val === 100).length,
+    A: scores.filter(val => val < 100 && val >= 90).length,
+    B: scores.filter(val => val < 90 && val >= 80).length,
+    C: scores.filter(val => val < 80 && val >= 60).length,
+    D: scores.filter(val => val < 60 && val >= 0).length,
+    X: scores.filter(val => val === -1).length
+  };
+}
+
+// #28: methods of arrayObject---every() and some() http://www.codewars.com/kata/57308546bd9f0987c2000d07
+
+function mirrorImage(arr){
+  let a = 0;
+  let b = 0;
+  arr.some((x, i) => {
+    let finded = i == arr.length-1 ? -1 : arr[i+1]
+    if(x == Number(finded.toString().split('').reverse().join(''))){
+      a = x
+      b = finded
+      return true
+    }else{
+      a = -1;
+      b = -1;
+      return false
+    }
+  });
+  return [a, b];
+}
