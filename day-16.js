@@ -16,9 +16,14 @@ function sortIt(arr) {
 function isolateIt(arr) {
   return arr.map(function(el, index, arr) {
     if (el.length % 2 === 0)
-      return `${el.substring(0, el.length / 2)}|${el.substring(el.length / 2, el.length)}`;
+      return `${el.substring(0, el.length / 2)}|${el.substring(
+          el.length / 2,
+          el.length
+      )}`;
     else
-      return `${el.substring(0, Math.floor(el.length / 2))}|${el.slice(Math.floor(el.length / 2) + 1)}`;
+      return `${el.substring(0, Math.floor(el.length / 2))}|${el.slice(
+          Math.floor(el.length / 2) + 1
+      )}`;
   });
 }
 
