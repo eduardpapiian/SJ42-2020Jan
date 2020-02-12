@@ -146,6 +146,24 @@ Symbol.keyFor() http://tddbin.com/#?kata=es6/language/symbol/keyFor
 
 Implement own reduce https://www.codewars.com/kata/array-number-reduce/train/javascript
 
+**18.day-18.js** TDD Bin - Array
+
+Array.from() http://tddbin.com/#?kata=es6/language/array-api/from
+
+Array.of() http://tddbin.com/#?kata=es6/language/array-api/of
+
+[].fill() http://tddbin.com/#?kata=es6/language/array-api/fill
+
+[].find() http://tddbin.com/#?kata=es6/language/array-api/find
+
+[].findIndex() http://tddbin.com/#?kata=es6/language/array-api/findIndex
+
+[].entries() http://tddbin.com/#?kata=es6/language/array-api/entries
+
+[].keys() http://tddbin.com/#?kata=es6/language/array-api/keys
+
+[].values() http://tddbin.com/#?kata=es6/language/array-api/values
+
 !! #22: Unlock new skills--Arrow function,spread operator and deconstruction http://www.codewars.com/kata/572ab0cfa3af384df7000ff8
 !! #24: methods of arrayObject---splice() and slice() http://www.codewars.com/kata/572cb264362806af46000793
 !! #25: methods of arrayObject---reverse() and sort() http://www.codewars.com/kata/572df796914b5ba27c000c90
