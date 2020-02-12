@@ -3,9 +3,9 @@
 const shuffleIt = (arr, ...arr2) => {
   arr2.forEach(a => {
     [arr[a[0]], arr[a[1]]] = [arr[a[1]], arr[a[0]]]
-  })
+  });
   return arr
-}
+};
 
 // http://www.codewars.com/kata/572ab0cfa3af384df7000ff8 #23: methods of arrayObject---push(), pop(), shift() and unshift()
 

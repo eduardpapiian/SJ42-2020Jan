@@ -136,8 +136,18 @@ Symbol.keyFor() http://tddbin.com/#?kata=es6/language/symbol/keyFor
 
 #28: methods of arrayObject---every() and some() http://www.codewars.com/kata/57308546bd9f0987c2000d07
 
+**17.day-17.js** Array
+
+#29: methods of arrayObject---concat() and join() http://www.codewars.com/kata/5731861d05d14d6f50000626
+
+#30: methods of arrayObject---reduce() and reduceRight() http://www.codewars.com/kata/573156709a231dcec9000ee8
+
+#31: methods of arrayObject---isArray() indexOf() and toString() http://www.codewars.com/kata/5732b0351eb838d03300101d
+
+Implement own reduce https://www.codewars.com/kata/array-number-reduce/train/javascript
 
 !! #22: Unlock new skills--Arrow function,spread operator and deconstruction http://www.codewars.com/kata/572ab0cfa3af384df7000ff8
 !! #24: methods of arrayObject---splice() and slice() http://www.codewars.com/kata/572cb264362806af46000793
 !! #25: methods of arrayObject---reverse() and sort() http://www.codewars.com/kata/572df796914b5ba27c000c90
 !! #28: methods of arrayObject---every() and some() http://www.codewars.com/kata/57308546bd9f0987c2000d07
+!! Implement own reduce https://www.codewars.com/kata/array-number-reduce/train/javascript

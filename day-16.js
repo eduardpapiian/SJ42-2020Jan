@@ -42,8 +42,8 @@ function mirrorImage(arr){
   arr.some((x, i) => {
     let finded = i == arr.length-1 ? -1 : arr[i+1]
     if(x == Number(finded.toString().split('').reverse().join(''))){
-      a = x
-      b = finded
+      a = x;
+      b = finded;
       return true
     }else{
       a = -1;
