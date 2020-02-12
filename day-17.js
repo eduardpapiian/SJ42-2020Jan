@@ -33,17 +33,16 @@ function blackAndWhite(arr) {
 Array.prototype.reduce = function(process, initial) {
   const arr = this;
   arr.forEach(val => {
-    if (!initial){
-      switch(typeof val){
-        case 'string':
-          initial = ''
+    if (!initial) {
+      switch (typeof val) {
+        case "string":
+          initial = "";
           break;
-        case 'number' :
+        default:
           initial = 0;
-          break;
       }
     }
-    initial = process(initial, val)
+    initial = process(initial, val);
   });
-  return initial
+  return initial;
 };
