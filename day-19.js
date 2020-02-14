@@ -1,3 +1,5 @@
+// basics http://tddbin.com/#?kata=es6/language/template-strings/basics
+
 // 1: template strings - basics
 // To do: make all tests pass, leave the asserts unchanged!
 // Follow the hints of the failure messages!
@@ -40,6 +42,8 @@ describe('A template string, is wrapped in ` (backticks) instead of \' or "', fu
 });
 
 
+// multiline http://tddbin.com/#?kata=es6/language/template-strings/multiline
+
 // 2: template strings - multiline
 // To do: make all tests pass, leave the asserts unchanged!
 // Follow the hints of the failure messages!
@@ -70,6 +74,8 @@ describe('Template string, can contain multiline content', function() {
     });
   });
 });
+
+// tagged template strings http://tddbin.com/#?kata=es6/language/template-strings/tagged
 
 // 3: template strings - tagged
 // To do: make all tests pass, leave the asserts unchanged!
@@ -123,6 +129,7 @@ describe('Tagged template strings, are an advanced form of template strings', fu
   });
 });
 
+// raw property http://tddbin.com/#?kata=es6/language/template-strings/raw
 
 // 4: template strings - String.raw
 // To do: make all tests pass, leave the asserts unchanged!
@@ -159,6 +166,7 @@ describe('Use the `raw` property of tagged template strings like so `s.raw`', fu
   });
 });
 
+// with arrays http://tddbin.com/#?kata=es6/language/spread/with-arrays
 
 // 20: spread - with-arrays
 // To do: make all tests pass, leave the assert lines unchanged!
@@ -213,6 +221,8 @@ describe('Spread syntax with arrays', () => {
   });
 });
 
+
+// with strings http://tddbin.com/#?kata=es6/language/spread/with-strings
 
 // 21: spread - with-strings
 // To do: make all tests pass, leave the assert lines unchanged!
