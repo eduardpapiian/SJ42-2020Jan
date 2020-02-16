@@ -190,6 +190,14 @@ with strings http://tddbin.com/#?kata=es6/language/spread/with-strings
 
 #39: Regular Expression--""?"", ""*"", ""+"" and ""{}"" https://www.codewars.com/kata/573bca07dffc1aa693000139
 
+**21.day-21.js**
+
+#40: Regular Expression--""|"", ""[]"" and ""()"" http://www.codewars.com/kata/573d11c48b97c0ad970002d4
+
+#41: Regular Expression--"""" http://www.codewars.com/kata/573e6831e3201f6a9b000971
+
+#42: Regular Expression--(?:), (?=) and (?!) http://www.codewars.com/kata/573fb9223f9793e485000453
+
 !! #22: Unlock new skills--Arrow function,spread operator and deconstruction http://www.codewars.com/kata/572ab0cfa3af384df7000ff8
 !! #24: methods of arrayObject---splice() and slice() http://www.codewars.com/kata/572cb264362806af46000793
 !! #25: methods of arrayObject---reverse() and sort() http://www.codewars.com/kata/572df796914b5ba27c000c90
