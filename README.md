@@ -182,6 +182,13 @@ with arrays http://tddbin.com/#?kata=es6/language/spread/with-arrays
 
 with strings http://tddbin.com/#?kata=es6/language/spread/with-strings
 
+**20.day-20.js**
+
+#37: Unlock new weapon---RegExp Object http://www.codewars.com/kata/5735e39313c205fe39001173
+
+#38: Regular Expression--""^"",""$"", ""."" and test() http://www.codewars.com/kata/573975d3ac3eec695b0013e0
+
+#39: Regular Expression--""?"", ""*"", ""+"" and ""{}"" https://www.codewars.com/kata/573bca07dffc1aa693000139
 
 !! #22: Unlock new skills--Arrow function,spread operator and deconstruction http://www.codewars.com/kata/572ab0cfa3af384df7000ff8
 !! #24: methods of arrayObject---splice() and slice() http://www.codewars.com/kata/572cb264362806af46000793
