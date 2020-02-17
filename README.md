@@ -198,6 +198,12 @@ with strings http://tddbin.com/#?kata=es6/language/spread/with-strings
 
 #42: Regular Expression--(?:), (?=) and (?!) http://www.codewars.com/kata/573fb9223f9793e485000453
 
+**22.day-22.js**
+
+Basics http://tddbin.com/#?kata=es6/language/arrow-functions/basics
+
+Function binding http://tddbin.com/#?kata=es6/language/arrow-functions/binding
+
 !! #22: Unlock new skills--Arrow function,spread operator and deconstruction http://www.codewars.com/kata/572ab0cfa3af384df7000ff8
 !! #24: methods of arrayObject---splice() and slice() http://www.codewars.com/kata/572cb264362806af46000793
 !! #25: methods of arrayObject---reverse() and sort() http://www.codewars.com/kata/572df796914b5ba27c000c90
