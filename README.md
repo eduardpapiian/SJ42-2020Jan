@@ -210,6 +210,12 @@ Unpacking arguments http://www.codewars.com/kata/unpacking-arguments
 
 For the sake of argument http://www.codewars.com/kata/for-the-sake-of-argument
 
+**24.day-24.js**
+
+Duplicate arguments http://www.codewars.com/kata/duplicate-arguments
+
+Last Argument http://www.codewars.com/kata/last
+
 
 !! #22: Unlock new skills--Arrow function,spread operator and deconstruction http://www.codewars.com/kata/572ab0cfa3af384df7000ff8
 !! #24: methods of arrayObject---splice() and slice() http://www.codewars.com/kata/572cb264362806af46000793
