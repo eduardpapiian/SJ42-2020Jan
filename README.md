@@ -216,6 +216,11 @@ Duplicate arguments http://www.codewars.com/kata/duplicate-arguments
 
 Last Argument http://www.codewars.com/kata/last
 
+**25.day-25.js**
+
+Call function using apply http://www.codewars.com/kata/write-javascripts-call-function-using-apply
+
+Anonymous returns http://www.codewars.com/kata/anonymous-returns
 
 !! #22: Unlock new skills--Arrow function,spread operator and deconstruction http://www.codewars.com/kata/572ab0cfa3af384df7000ff8
 !! #24: methods of arrayObject---splice() and slice() http://www.codewars.com/kata/572cb264362806af46000793
