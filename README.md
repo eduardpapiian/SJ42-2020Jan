@@ -227,3 +227,5 @@ Anonymous returns http://www.codewars.com/kata/anonymous-returns
 !! #25: methods of arrayObject---reverse() and sort() http://www.codewars.com/kata/572df796914b5ba27c000c90
 !! #28: methods of arrayObject---every() and some() http://www.codewars.com/kata/57308546bd9f0987c2000d07
 !! Implement own reduce https://www.codewars.com/kata/array-number-reduce/train/javascript
+!! Call function using apply http://www.codewars.com/kata/write-javascripts-call-function-using-apply
+
