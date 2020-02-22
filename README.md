@@ -228,6 +228,11 @@ Power of bind http://www.codewars.com/kata/power-bind
 
 Sort with Arrow Functions https://www.codewars.com/kata/sort-with-arrow-functions
 
+**27.day-27.js**
+
+Understanding closures - the basics https://www.codewars.com/kata/56b71b1dbd06e6d88100092a
+
+Shifty closures https://www.codewars.com/kata/shifty-closures/train/javascript
 
 !! #22: Unlock new skills--Arrow function,spread operator and deconstruction http://www.codewars.com/kata/572ab0cfa3af384df7000ff8
 !! #24: methods of arrayObject---splice() and slice() http://www.codewars.com/kata/572cb264362806af46000793
