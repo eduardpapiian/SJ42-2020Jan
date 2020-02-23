@@ -234,6 +234,12 @@ Understanding closures - the basics https://www.codewars.com/kata/56b71b1dbd06e6
 
 Shifty closures https://www.codewars.com/kata/shifty-closures/train/javascript
 
+**28.day-28.js**
+
+Function within a function http://www.codewars.com/kata/a-function-within-a-function
+
+Singleton pattern https://www.codewars.com/kata/singleton-pattern/train/javascript
+
 !! #22: Unlock new skills--Arrow function,spread operator and deconstruction http://www.codewars.com/kata/572ab0cfa3af384df7000ff8
 !! #24: methods of arrayObject---splice() and slice() http://www.codewars.com/kata/572cb264362806af46000793
 !! #25: methods of arrayObject---reverse() and sort() http://www.codewars.com/kata/572df796914b5ba27c000c90
