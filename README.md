@@ -240,6 +240,12 @@ Function within a function http://www.codewars.com/kata/a-function-within-a-func
 
 Singleton pattern https://www.codewars.com/kata/singleton-pattern/train/javascript
 
+**30.day-30.js**
+
+SantaClausable Interface http://www.codewars.com/kata/santaclausable-interface
+
+Cylon Evolution http://www.codewars.com/kata/cylon-evolution
+
 !! #22: Unlock new skills--Arrow function,spread operator and deconstruction http://www.codewars.com/kata/572ab0cfa3af384df7000ff8
 !! #24: methods of arrayObject---splice() and slice() http://www.codewars.com/kata/572cb264362806af46000793
 !! #25: methods of arrayObject---reverse() and sort() http://www.codewars.com/kata/572df796914b5ba27c000c90
