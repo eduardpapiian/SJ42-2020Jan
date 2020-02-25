@@ -246,6 +246,34 @@ SantaClausable Interface http://www.codewars.com/kata/santaclausable-interface
 
 Cylon Evolution http://www.codewars.com/kata/cylon-evolution
 
+**31.day-31.js**
+
+Object Literal
+
+Basics http://tddbin.com/#?kata=es6/language/object-literal/basics
+
+Computed Properties http://tddbin.com/#?kata=es6/language/object-literal/computed-properties
+
+Getter http://tddbin.com/#?kata=es6/language/object-literal/getter
+
+Setter http://tddbin.com/#?kata=es6/language/object-literal/setter
+
+Class
+
+Creation http://tddbin.com/#?kata=es6/language/class/creation
+
+Accessors http://tddbin.com/#?kata=es6/language/class/accessors
+
+Static http://tddbin.com/#?kata=es6/language/class/static
+
+Extends http://tddbin.com/#?kata=es6/language/class/extends
+
+More Extends http://tddbin.com/#?kata=es6/language/class/more-extends
+
+Super in Method http://tddbin.com/#?kata=es6/language/class/super-in-method
+
+Super in Constructor http://tddbin.com/#?kata=es6/language/class/super-in-constructor
+
 !! #22: Unlock new skills--Arrow function,spread operator and deconstruction http://www.codewars.com/kata/572ab0cfa3af384df7000ff8
 !! #24: methods of arrayObject---splice() and slice() http://www.codewars.com/kata/572cb264362806af46000793
 !! #25: methods of arrayObject---reverse() and sort() http://www.codewars.com/kata/572df796914b5ba27c000c90

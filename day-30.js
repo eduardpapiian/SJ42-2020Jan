@@ -22,3 +22,4 @@ function HumanSkin(model) {
 }
 
 HumanSkin.prototype = new Cylon();
+
