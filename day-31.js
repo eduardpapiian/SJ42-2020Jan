@@ -256,3 +256,168 @@ describe('Class creation', () => {
     assert.equal(classType, 'function');
   });
 });
+
+// Accessors http://tddbin.com/#?kata=es6/language/class/accessors
+
+// 23: class - accessors
+// To do: make all tests pass, leave the assert lines unchanged!
+// Follow the hints of the failure messages!
+
+describe('Class accessors (getter and setter)', () => {
+  it('a getter is defined like a method prefixed with `get`', () => {
+    class MyAccount {
+      get balance() { return Infinity; }
+    }
+    assert.equal(new MyAccount().balance, Infinity);
+  });
+  it('a setter has the prefix `set`', () => {
+    class MyAccount {
+      get balance() { return this.amount; }
+      set balance(amount) { this.amount = amount; }
+    }
+    const account = new MyAccount();
+    account.balance = 23;
+    assert.equal(account.balance, 23);
+  });
+
+  describe('dynamic accessors', () => {
+    it('a dynamic getter name is enclosed in `[]`', function() {
+      const balance = 'yourMoney';
+      class YourAccount {
+        get [balance]() { return -Infinity; }
+      }
+      assert.equal(new YourAccount().yourMoney, -Infinity);
+    });
+    it('a dynamic setter name as well', function() {
+      const propertyName = 'balance';
+      class MyAccount {
+        get [propertyName]() { return this.amount; }
+        set [propertyName](amount) { this.amount = 23; }
+      }
+      const account = new MyAccount();
+      account.balance = 42;
+      assert.equal(account.balance, 23);
+    });
+  });
+});
+
+// Static http://tddbin.com/#?kata=es6/language/class/static
+
+// 24: class - static keyword
+// To do: make all tests pass, leave the assert lines unchanged!
+// Follow the hints of the failure messages!
+
+describe('Inside a class you can use the `static` keyword', () => {
+  describe('for methods', () => {
+    class UnitTest {}
+    it('a static method just has the prefix `static`', () => {
+      class TestFactory {
+        static makeTest() { return new UnitTest(); }
+      }
+      assert.ok(TestFactory.makeTest() instanceof UnitTest);
+    });
+    it('the method name can be dynamic/computed at runtime', () => {
+      const methodName = 'createTest';
+      class TestFactory {
+        static [methodName]() { return new UnitTest(); }
+      }
+      assert.ok(TestFactory.createTest() instanceof UnitTest);
+    });
+  });
+  describe('for accessors', () => {
+    it('a getter name can be static, just prefix it with `static`', () => {
+      class UnitTest {
+        static get testType() { return 'unit'; }
+      }
+      assert.equal(UnitTest.testType, 'unit');
+    });
+    it('even a static getter name can be dynamic/computed at runtime', () => {
+      const type = 'test' + 'Type';
+      class IntegrationTest {
+        static get [type]() { return 'integration'; }
+      }
+      assert.ok('testType' in IntegrationTest);
+      assert.equal(IntegrationTest.testType, 'integration');
+    });
+  });
+});
+
+// Extends http://tddbin.com/#?kata=es6/language/class/extends
+
+// 25: class - extends
+// To do: make all tests pass, leave the assert lines unchanged!
+// Follow the hints of the failure messages!
+
+describe('Classes can inherit from another using `extends`', () => {
+  describe('the default super class is `Object`', () => {
+    it('a `class A` is an instance of `Object`', () => {
+      class A {};
+      assert.equal(new A() instanceof Object, true);
+    });
+    it('when B extends A, B is also instance of `Object`', () => {
+      class A {};
+      const B = A;
+      assert.equal(new B() instanceof A, true);
+      assert.equal(new B() instanceof Object, true);
+    });
+    it('a class can extend `null`, and is not an instance of Object', () => {
+      class NullClass extends Object {}
+      let nullInstance = null;
+      assert.equal(nullInstance instanceof Object, false);
+    });
+  });
+  describe('instance of', () => {
+    it('when B inherits from A, `new B()` is also an instance of A', () => {
+      class A {};
+      class B extends A {};
+      assert.equal(new B() instanceof A, true);
+    });
+    it('extend over multiple levels', () => {
+      class A {};
+      class B extends A {};
+      class C extends B {};
+      assert.equal(new C instanceof A, true);
+    });
+  });
+});
+
+// More Extends http://tddbin.com/#?kata=es6/language/class/more-extends
+
+// 26: class - more-extends
+// To do: make all tests pass, leave the assert lines unchanged!
+// Follow the hints of the failure messages!
+
+describe('Classes can inherit from another', () => {
+  it('extend an `old style` "class", a function, still works', () => {
+    class A {}
+    class B extends A {}
+    assert.equal(new B() instanceof A, true);
+  });
+
+  describe('prototypes are as you know them', () => {
+    class A {}
+    class B extends A {}
+    it('A is the prototype of B', () => {
+      const isIt = A.isPrototypeOf(B);
+      assert.equal(isIt, true);
+    });
+    it('A`s prototype is also B`s prototype', () => {
+      const proto = B;
+      // Remember: don't touch the assert!!! :)
+      assert.equal(A.prototype.isPrototypeOf(proto), true);
+    });
+  });
+
+  describe('`extends` using an expression', () => {
+    it('e.g. the inline assignment of the parent class', () => {
+      let A;
+      class B extends (A = {}) {}
+      assert.equal(new B() instanceof A, true);
+    });
+    it('or calling a function that returns the parent class', () => {
+      const returnParent = (beNull) => beNull ? null : class {};
+      class B extends returnParent {}
+      assert.equal(Object.getPrototypeOf(B.prototype), null);
+    });
+  });
+});
