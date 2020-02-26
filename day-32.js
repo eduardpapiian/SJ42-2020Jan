@@ -1,7 +1,15 @@
 // "this"" is a problem - http://www.codewars.com/kata/this-is-a-problem
+
+function NameMe(first, last) {
+  this.firstName = first;
+  this.lastName = last;
+  this.name = this.firstName + ' ' + this.lastName
+}
+
+// ""this"" is an other problem - https://www.codewars.com/kata/this-is-an-other-problem
+
 class NamedOne {
-  constructor(first, last){
-    // -- SHOULD be changed --
+  constructor(first, last) {
     this.firstName = first;
     this.lastName = last;
   }
@@ -10,15 +18,11 @@ class NamedOne {
     return `${this.firstName} ${this.lastName}`;
   }
 
-  set giveNewFullName(newValue) {
-    this.fullName = newValue.split(' ')
+  set fullName(newValue) {
+    if (newValue.split(" ").length === 2) {
+      this.firstName = newValue.split(" ")[0];
+      this.lastName = newValue.split(" ")[1];
+    }
   }
 }
-
-var n = new NamedOne('John', 'Doe');
-console.log('n', n);
-console.log('full', n.fullName)
-n.firstName = "Bill";
-console.log('n2', n);
-console.log('full2', n.fullName)
 
