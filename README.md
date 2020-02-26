@@ -274,6 +274,13 @@ Super in Method http://tddbin.com/#?kata=es6/language/class/super-in-method
 
 Super in Constructor http://tddbin.com/#?kata=es6/language/class/super-in-constructor
 
+**32.day-32.js**
+
+"this"" is a problem - http://www.codewars.com/kata/this-is-a-problem
+
+""this"" is an other problem - https://www.codewars.com/kata/this-is-an-other-problem
+
+
 !! #22: Unlock new skills--Arrow function,spread operator and deconstruction http://www.codewars.com/kata/572ab0cfa3af384df7000ff8
 !! #24: methods of arrayObject---splice() and slice() http://www.codewars.com/kata/572cb264362806af46000793
 !! #25: methods of arrayObject---reverse() and sort() http://www.codewars.com/kata/572df796914b5ba27c000c90
