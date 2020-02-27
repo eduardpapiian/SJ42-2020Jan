@@ -240,6 +240,12 @@ Function within a function http://www.codewars.com/kata/a-function-within-a-func
 
 Singleton pattern https://www.codewars.com/kata/singleton-pattern/train/javascript
 
+**29.day-29.js**
+
+How new works https://www.codewars.com/kata/how-new-works
+
+Replicate new http://www.codewars.com/kata/replicate-new
+
 **30.day-30.js**
 
 SantaClausable Interface http://www.codewars.com/kata/santaclausable-interface
