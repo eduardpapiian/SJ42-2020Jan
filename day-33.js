@@ -167,3 +167,274 @@ describe('`Reflect.apply` calls a target function', function() {
     });
 
 });
+
+// Reflect.getPrototypeOf() http://tddbin.com/#?kata=es6/language/reflect/getprototypeof
+
+// 60: Reflect - getPrototypeOf
+// To do: make all tests pass, leave the assert lines unchanged!
+
+describe('`Reflect.getPrototypeOf` returns the prototype', function() {
+    it('works like `Object.getPrototypeOf`', function() {
+        const viaObject = Object.getPrototypeOf({});
+        const viaReflect = Reflect.getPrototypeOf({});
+        assert.strictEqual(viaObject, viaReflect);
+    });
+    it('throws a TypeError for a non-object', function() {
+        let fn = () => { Reflect.getPrototypeOf() };
+        assert.throws(fn, TypeError);
+    });
+    it('a `new Set()` has a prototype', function() {
+        const aSet = new Set();
+        assert.equal(Reflect.getPrototypeOf(aSet), Set.prototype);
+    });
+    it('for a class, it is `Klass.prototype`', function() {
+        class Klass {}
+        const proto = Reflect.getPrototypeOf(new Klass());
+        assert.equal(proto, Klass.prototype);
+    });
+    it('works also for an old-style "class"', function() {
+        function Klass() {}
+        const proto = Reflect.getPrototypeOf(new Klass());
+        assert.equal(proto, Klass.prototype);
+    });
+    it('an array has a prototype too', function() {
+        let arr = [];
+        const expectedProto = Array.prototype;
+        assert.equal(Reflect.getPrototypeOf(arr), expectedProto);
+    });
+
+    // TODO
+    // it('getting the prototype of an "exotic namespace object" returns `null`', function() {
+    //   http://www.ecma-international.org/ecma-262/6.0/#sec-module-namespace-exotic-objects-getprototypeof
+    //   Don't know how to write a test for this yet, without creating a dep in tddbin hardcoded
+    //   PRs welcome
+    //   assert.equal(Reflect.getPrototypeOf(namespace exotic object), null);
+    // });
+});
+
+// Reflect.construct() http://tddbin.com/#?kata=es6/language/reflect/construct
+
+// 68: Reflect - construct
+// To do: make all tests pass, leave the assert lines unchanged!
+
+describe('`Reflect.construct` is the `new` operator as a function', function() {
+    describe('the function itself', function() {
+        it('is static on the `Reflect` object', function() {
+            const name = 'constructor';
+            assert.equal(name in Reflect, true);
+        });
+        it('is of type `function`', function() {
+            const expectedType = 'function';
+            assert.equal(typeof Reflect.construct, expectedType)
+        });
+    });
+
+    describe('the 1st parameter is the constructor to be invoked', function() {
+        it('fails when given a number as constructor', function() {
+            let aNumber = 1;
+            assert.throws(() => { Reflect.construct(aNumber, []) }, TypeError);
+        });
+        it('works given a function that can be instanciated', function() {
+            let aFunction = function () {};
+            assert.doesNotThrow(() => { Reflect.construct(aFunction, []) });
+        });
+        it('works given a class', function() {
+            const aClass = class {};
+            assert.doesNotThrow(() => { Reflect.construct(aClass, []) });
+        });
+    });
+
+    describe('the 2nd parameter is a list of arguments, that will be passed to the constructor', function() {
+
+        const aClass = class {};
+        it('fails when it`s not an array(-like), e.g. a number', function() {
+            let aNumber = 1;
+            assert.throws(() => { Reflect.construct(aClass, aNumber) }, TypeError);
+        });
+        it('works with an array-like object (the `length` property look up should not throw)', function() {
+            let arrayLike = {get length() {}};
+            assert.doesNotThrow(() => { Reflect.construct(aClass, arrayLike) });
+        });
+        it('works with a real array', function() {
+            let realArray = [];
+            assert.doesNotThrow(() => { Reflect.construct(aClass, realArray) });
+        });
+    });
+
+    describe('in use', function() {
+        it('giving it a class it returns an instance of this class', function() {
+            class Constructable {}
+            let instance = Reflect.construct(Constructable, []) // use Reflect.construct here!!!
+            assert.equal(instance instanceof Constructable, true);
+        });
+        describe('the list of arguments are passed to the constructor as given', function() {
+            class Constructable {
+                constructor(...args) { this.args = args; }
+            }
+            it('if none given, nothing is passed', function() {
+                let instance = Reflect.construct(Constructable, []);
+                assert.deepEqual(instance.args, []);
+            });
+            it('passing an array, all args of any type are passed', function() {
+                const argumentsList = ['arg1', ['arg2.1', 'arg2.2'], {arg: 3}];
+                let instance = Reflect.construct(Constructable, argumentsList);
+                assert.deepEqual(instance.args, argumentsList);
+            });
+        });
+    });
+
+    describe('the length property', function() {
+        it('of `Reflect.construct` is 2', function() {
+            let expected = 2;
+            assert.equal(Reflect.construct.length, expected);
+        });
+    });
+});
+
+
+// Reflect.defineProperty() http://tddbin.com/#?kata=es6/language/reflect/defineproperty
+
+// 69: Reflect - defineProperty
+// To do: make all tests pass, leave the assert lines unchanged!
+
+describe('`Reflect.defineProperty()` is like `Object.defineProperty()` but returns a Boolean.', function() {
+    describe('the function itself', function() {
+        it('is static on the `Reflect` object', function() {
+            const name = 'defineProperty';
+            assert.equal(name in Reflect, true);
+        });
+        it('is of type `function`', function() {
+            const expectedType = 'function';
+            assert.equal(typeof Reflect.defineProperty, expectedType)
+        });
+    });
+
+    describe('the 1st parameter is the object on which to define a property', function() {
+        it('fails if it is not an object', function() {
+            let noObj = 1;
+            assert.throws(() => { Reflect.defineProperty(noObj, 'property', {value: 'value'}); });
+        });
+        it('accepts an object', function() {
+            let obj = {};
+            assert.doesNotThrow(() => { Reflect.defineProperty(obj, 'property', {value: 'value'}); });
+        });
+        it('accepts an instance (of a class)', function() {
+            let instance = class {};
+            assert.doesNotThrow(() => { Reflect.defineProperty(instance, 'property', {value: 'value'}); });
+        });
+    });
+
+    describe('2nd parameter is the name of the property to be defined on the object (normally a string)', function() {
+        it('works with a `normal` string', function() {
+            let obj = {};
+            Reflect.defineProperty(obj, 'prop', {});
+            assert.equal('prop' in obj, true);
+        });
+        it('a number gets converted into a string', function() {
+            let obj = {};
+            Reflect.defineProperty(obj, 1, {});
+            assert.equal('1' in obj, true);
+        });
+        it('`undefined` also gets converted into a string (watch out!)', function() {
+            let obj = {};
+            let undef = undefined;
+            Reflect.defineProperty(obj, undef, {});
+            assert.equal('undefined' in obj, true);
+        });
+        it('it can be a symbol', function() {
+            let obj = {};
+            const sym = Symbol.for('prop');
+            Reflect.defineProperty(obj, sym, {});
+            assert.equal(sym in obj, true);
+        });
+    });
+
+    describe('the `value` is part of the 3rd parameter, given as a property in an object `{value: ...}`', function() {
+        // The entire complexity of the 3rd parameter might be covered in a later kata.
+        it('contains the initial value of the property, as an object in the property `value`', function() {
+            let obj = {};
+            Reflect.defineProperty(obj, 'prop', { value: 'property value'});
+            assert.equal(obj.prop, 'property value');
+        });
+        it('can be of any type (even itself)', function() {
+            let obj = {};
+            Reflect.defineProperty(obj, 'prop',  { value: obj });
+            assert.equal(obj.prop, obj);
+        });
+    });
+
+    describe('the return value of the function indicates wether the property was defined successfully', function() {
+        describe('returns true', function() {
+            it('when the property was created (which requires the 3rd parameter too!!!)', function() {
+                let instance = class {};
+                const wasPropertyDefined = Reflect.defineProperty(instance, 'prop', {value : '1'});
+                assert.equal(wasPropertyDefined, true);
+            });
+            it('no matter what the value of the property is (just the 3rd param has to exist as `{}`)', function() {
+                let instance = new class {};
+                const wasPropertyDefined = Reflect.defineProperty(instance, '1', {});
+                assert.equal(wasPropertyDefined, true);
+            });
+        });
+        describe('returns false', function() {
+            it('when a non-configurable property wants to be changed to configurable=true', function() {
+                let obj = {};
+                Reflect.defineProperty(obj, 'x', {configurable: false});
+                const wasPropertyDefined = Reflect.defineProperty(obj, 'x', {configurable: true});
+                assert.equal(wasPropertyDefined, false);
+            });
+            it('when the object we want to add a property to is frozen', function() {
+                let instance = new class {};
+                const wasPropertyDefined = false
+                assert.equal(wasPropertyDefined, false);
+            });
+        });
+    });
+});
+
+// TDD Bin Modules import https://tddbin.com/?664#?kata=es6/language/modules/import
+
+// 61: modules - import
+// To do: make all tests pass, leave the assert lines unchanged!
+
+// import assert from 'assert'; // is only here for completeness, `assert` is always imported by default
+
+
+describe('use `import` to import functions that have been exported (somewhere else)', function() {
+    describe('the import statement', function() {
+        it('is only allowed on the root level', function() {
+            // Try to comment this out, it will yell at you!
+            // import assert from 'assert';
+        });
+        it('import an entire module using `import <name> from "<moduleName>"`', function() {
+            const expectedType = 'function';
+            assert.equal(typeof assert, expectedType);
+        });
+    });
+    describe('import members', function() {
+        it('import a single member, using `import {<memberName>} from "module"`', function() {
+            // import { hello } from 'assert';
+            assert.strictEqual(equal, assert.equal);
+        });
+        describe('separate multiple members with a comma', function() {
+            it('`deepEqual` from the assert module', () => {
+                // import { hello, world } from 'assert';
+                assert.strictEqual(deepEqual, assert.deepEqual);
+            });
+            it('`notEqual` from the assert module', () => {
+                // import { notEqual } from 'assert';
+                assert.strictEqual(notEqual, assert.notEqual);
+            });
+        });
+    });
+    describe('alias imports', function() {
+        it('using `member as alias` as memberName', function() {
+            // import { member as alias } from "memberName";
+            assert.strictEqual(myEqual, assert.equal);
+        });
+        it('rename the default export of a module, using `default as alias` as memberName', function() {
+            // import defaultExport, * as name from "memberName";
+            assert.strictEqual(myAssert, assert);
+        });
+    });
+});
