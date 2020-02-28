@@ -286,6 +286,25 @@ Super in Constructor http://tddbin.com/#?kata=es6/language/class/super-in-constr
 
 ""this"" is an other problem - https://www.codewars.com/kata/this-is-an-other-problem
 
+**33.day-33.js**
+
+TDD Bin Object.is()
+
+Object.is() http://tddbin.com/#?kata=es6/language/object-api/is
+
+TDD Bin Reflect http://tddbin.com/#?kata=es6/language/reflect/basics
+
+Basics
+
+Reflect.apply() http://tddbin.com/#?kata=es6/language/reflect/apply
+
+Reflect.getPrototypeOf() http://tddbin.com/#?kata=es6/language/reflect/getprototypeof
+
+Reflect.construct() http://tddbin.com/#?kata=es6/language/reflect/construct
+
+Reflect.defineProperty() http://tddbin.com/#?kata=es6/language/reflect/defineproperty
+
+TDD Bin Modules import https://tddbin.com/?664#?kata=es6/language/modules/import
 
 !! #22: Unlock new skills--Arrow function,spread operator and deconstruction http://www.codewars.com/kata/572ab0cfa3af384df7000ff8
 !! #24: methods of arrayObject---splice() and slice() http://www.codewars.com/kata/572cb264362806af46000793
