@@ -334,6 +334,16 @@ the API http://tddbin.com/#?kata=es6/language/promise/api
 
 promise.catch() http://tddbin.com/#?kata=es6/language/promise/catch
 
+**37.day-37.js**
+
+array http://tddbin.com/#?kata=es6/language/iterator/array
+
+string http://tddbin.com/#?kata=es6/language/iterator/string
+
+protocol http://tddbin.com/#?kata=es6/language/iterator/protocol
+
+usage http://tddbin.com/#?kata=es6/language/iterator/usages
+
 !! #22: Unlock new skills--Arrow function,spread operator and deconstruction http://www.codewars.com/kata/572ab0cfa3af384df7000ff8
 !! #24: methods of arrayObject---splice() and slice() http://www.codewars.com/kata/572cb264362806af46000793
 !! #25: methods of arrayObject---reverse() and sort() http://www.codewars.com/kata/572df796914b5ba27c000c90
