@@ -306,7 +306,33 @@ Reflect.defineProperty() http://tddbin.com/#?kata=es6/language/reflect/definepro
 
 TDD Bin Modules import https://tddbin.com/?664#?kata=es6/language/modules/import
 
+**34.day-34.js**
 
+Adam and Eve - https://www.codewars.com/kata/basic-subclasses-adam-and-eve/
+
+Labrador - https://www.codewars.com/kata/56ff9b53140fcca90b000530/
+
+Classy Classes - https://www.codewars.com/kata/55a144eff5124e546400005a
+
+**35.day-35.js**
+
+Object Prototypes https://www.codewars.com/kata/js-prototypes-module-number-1-object-prototypes
+
+Class-Like Objects https://www.codewars.com/kata/javascript-class-like-objects
+
+**36.day-36.js**
+
+TDD Bin - Promises
+
+basics http://tddbin.com/#?kata=es6/language/promise/basics
+
+creation http://tddbin.com/#?kata=es6/language/promise/creation
+
+chaining `then()` http://tddbin.com/#?kata=es6/language/promise/chaining-then
+
+the API http://tddbin.com/#?kata=es6/language/promise/api
+
+promise.catch() http://tddbin.com/#?kata=es6/language/promise/catch
 
 !! #22: Unlock new skills--Arrow function,spread operator and deconstruction http://www.codewars.com/kata/572ab0cfa3af384df7000ff8
 !! #24: methods of arrayObject---splice() and slice() http://www.codewars.com/kata/572cb264362806af46000793
