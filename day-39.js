@@ -6,11 +6,13 @@ function createIterator(array){
         next: function() {
             if (iterator.index < array.length) {
                 return {
-                    value: array[iterator.index++], done: false
+                    value: array[iterator.index++],
+                    done: false
                 }
             }
             return {
-                value: array[iterator.index], done: true
+                value: array[iterator.index], 
+                done: true
             }
         }
     };
