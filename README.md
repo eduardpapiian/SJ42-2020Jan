@@ -368,4 +368,4 @@ Create iterator https://www.codewars.com/kata/5c743cec901022438549964a
 !! #28: methods of arrayObject---every() and some() http://www.codewars.com/kata/57308546bd9f0987c2000d07
 !! Implement own reduce https://www.codewars.com/kata/array-number-reduce/train/javascript
 !! Call function using apply http://www.codewars.com/kata/write-javascripts-call-function-using-apply
-
+!! Create iterator https://www.codewars.com/kata/5c743cec901022438549964a
