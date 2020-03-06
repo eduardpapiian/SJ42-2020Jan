@@ -11,7 +11,7 @@ function createIterator(array){
                 }
             }
             return {
-                value: array[iterator.index], 
+                value: array[iterator.index],
                 done: true
             }
         }
