@@ -3,10 +3,10 @@ async function submitOrder(user) {
   var shoppingCart, zipCode, shippingRate, orderSuccessful;
 
   // Get the current user's shopping cart
-  shoppingCart = await OrderAPI.getShoppingCartAsync(user)
+  shoppingCart = await OrderAPI.getShoppingCartAsync(user);
 
   // Also look up the ZIP code from their profile
-  const profile = await CustomerAPI.getProfileAsync(user)
+  const profile = await CustomerAPI.getProfileAsync(user);
   zipCode = profile.zipCode;
 
 
