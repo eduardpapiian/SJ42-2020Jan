@@ -362,6 +362,10 @@ send function to a generator http://tddbin.com/#?kata=es6/language/generator/sen
 
 Create iterator https://www.codewars.com/kata/5c743cec901022438549964a
 
+**40.day-40.js**
+
+Promises Made me Broken https://www.codewars.com/kata/587593285448632b8d000143
+
 !! #22: Unlock new skills--Arrow function,spread operator and deconstruction http://www.codewars.com/kata/572ab0cfa3af384df7000ff8
 !! #24: methods of arrayObject---splice() and slice() http://www.codewars.com/kata/572cb264362806af46000793
 !! #25: methods of arrayObject---reverse() and sort() http://www.codewars.com/kata/572df796914b5ba27c000c90
